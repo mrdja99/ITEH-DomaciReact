@@ -1,13 +1,16 @@
 import React from 'react';
 import Movie from './Movie';
 
-const Movies = () => {
+const Movies = ({ films }) => {
+
   return (
+
     <div className='all-products'>
-      <Movie />
-      <Movie />
-      <Movie />
-      <Movie />
+
+      {films.map((f) => (
+        <Movie film={f} key={f.id}/>
+      ))}
+      
     </div>
   )
 }
