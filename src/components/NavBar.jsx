@@ -1,6 +1,7 @@
 import React from 'react';
 import {BsCart} from 'react-icons/bs';
 import {MdMovie} from 'react-icons/md';
+import {FaBook} from 'react-icons/fa';
 import {Link} from 'react-router-dom';
 
 function NavBar({ movieNumber }) {
@@ -19,6 +20,11 @@ function NavBar({ movieNumber }) {
             <p className='cart-num'>{movieNumber}</p>
             <p>  filmova</p>
         </div>
+        <Link to='/kontakt' className='cart-items'>
+            <FaBook/>
+            <p>Kontakt</p>
+        </Link>
+
     </div>
 
   )

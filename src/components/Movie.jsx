@@ -8,6 +8,7 @@ function Movie({ film, addToCart, inCart, removeFromCart }) {
       <div className='card-body'>
         <h3 className='card-title'>{film.title}</h3>
         <p className='card-text'>{film.synopsys}</p>
+        <br/>
         <p className='card-text'>Starring: {film.actors}</p>
       </div>
       
