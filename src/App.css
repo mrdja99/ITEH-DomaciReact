@@ -1,7 +1,9 @@
+
 .navBar {
   display: flex;
   flex-direction: row;
-  background-color: rgb(211, 211, 211);
+  /*background-color: rgb(211, 211, 211);*/
+  background-color: rgb(216, 23, 23);
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: rgb(175, 175, 175);
@@ -30,7 +32,7 @@
   margin-left: 5px;
 }
 
-.all-products {
+.all-movies {
   display: flex;
   margin: 20px;
 }
@@ -39,6 +41,7 @@
   border-style: solid;
   border-width: 2px;
   border-color: rgb(211, 211, 211);
+  background-color: antiquewhite;
   border-radius: 10px;
   max-width: 200px;
 }
@@ -53,7 +56,7 @@
 }
 
 .btn {
-  background-color: cornflowerblue;
+  background-color: rgb(136, 100, 237);
   color: white;
   padding-top: 10px;
   padding-bottom: 5px;

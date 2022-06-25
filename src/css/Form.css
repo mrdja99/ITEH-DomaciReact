@@ -30,6 +30,7 @@
     border:1px solid rgb(8, 6, 6);
     border-radius: 5px;
     font-size: 20px;
+    background-color: bisque;
 }
 
 .form-box textarea{

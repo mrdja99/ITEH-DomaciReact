@@ -5,7 +5,7 @@ const Movies = ({ films, addToCart, removeFromCart }) => {
 
   return (
 
-    <div className='all-products'>
+    <div className='all-movies'>
 
       {films.map((f) => (
         <Movie film={f} key={f.id} addToCart={addToCart} inCart={1} removeFromCart={removeFromCart}/>

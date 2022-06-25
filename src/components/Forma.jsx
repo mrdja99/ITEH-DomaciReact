@@ -4,7 +4,7 @@ import Utisci from './Utisci'
 
 const Forma = ({ inHome }) => {
   return (
-    <div>
+    <div className='all-movies'>
       <Kontakt inHome={inHome}/>
     </div>
   )

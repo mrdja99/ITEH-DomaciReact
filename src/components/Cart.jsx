@@ -3,7 +3,7 @@ import Movie from './Movie'
 
 const Cart = ({ films, removeFromCart, inCart }) => {
   return (
-    <div className='all-products'>
+    <div className='all-movies'>
         {films.map((f) => (
         <Movie film={f} key={f.id} inCart={inCart} removeFromCart={removeFromCart}/>
       ))}
