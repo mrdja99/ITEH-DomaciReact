@@ -1,7 +1,7 @@
 import React from 'react';
 import {BsDashLg} from 'react-icons/bs'
 
-function Movie({ film, addToCart }) {
+function Movie({ film, addToCart, inCart }) {
   return (
     <div className='card' style={{ margin: 10}}>
       <img className='card-img-top' src={film.image} alt='Poster filma' width={200} />
@@ -10,8 +10,13 @@ function Movie({ film, addToCart }) {
         <p className='card-text'>{film.synopsys}</p>
         <p className='card-text'>Starring: {film.actors}</p>
       </div>
-      <button className="btn" onClick={addToCart}>Iznajmi</button>
-      <button className="btn"><BsDashLg/></button>
+      {inCart ===1? (<>
+          <button className="btn" onClick={() => addToCart(film.id)}>Iznajmi</button>
+      </>
+      ):(
+      <>
+          <button className="btn">Izbaci</button>
+      </>)}
     </div>
 
   )

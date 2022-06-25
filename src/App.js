@@ -2,6 +2,8 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import Movies from './components/Movies';
+import Cart from './components/Cart';
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import { useState } from 'react';
 
 function App() {
@@ -45,11 +47,14 @@ function App() {
 
 
   return (
-    <div className="App">
-      <NavBar movieNumber={movieNumber}></NavBar>  
-      <Movies films={films} addToCart={addMovie}/>
-  
-    </div>
+    <BrowserRouter className="App">
+      <NavBar movieNumber={movieNumber}></NavBar>
+      <Routes>
+        <Route path="/" element = { <Movies films={films} addToCart={addMovie}/> }/>
+        <Route path="/iznajmi" element = {<Cart films={films}/>}/>
+      </Routes>
+       
+    </BrowserRouter>
   );
 }
 

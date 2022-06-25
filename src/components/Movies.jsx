@@ -8,7 +8,7 @@ const Movies = ({ films, addToCart }) => {
     <div className='all-products'>
 
       {films.map((f) => (
-        <Movie film={f} key={f.id} addToCart={addToCart}/>
+        <Movie film={f} key={f.id} addToCart={addToCart} inCart={1}/>
       ))}
       
     </div>
