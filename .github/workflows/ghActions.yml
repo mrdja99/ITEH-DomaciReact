@@ -32,7 +32,7 @@ jobs:
     - run: npm run build --if-present
     - run: npm test
     - name: Automatic Releases
-      uses: marvinpinto/action-automatic-releases@v1
+      uses: marvinpinto/action-automatic-releases@latest
 
     - name: Check Build Status
       if: ${{ success() }}
